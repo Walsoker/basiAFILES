@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo-bg-white.jpg">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Basia Conseils & Immobilier</title>
+</head>
+<body>
+    <header class="background-properties">
+       <!-- Include Font Awesome for Icons (if not already included) -->
+       <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-white.png" alt="Logo" class="logo">
+            </a>
+    
+            <!-- Offcanvas Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle activenav" href="properties.html" id="propertiesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Properties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="properties.html">Terrains
+                                </a></li>
+                                <li><a class="dropdown-item" href="properties.html">Villas
+                                </a></li>
+                                <li><a class="dropdown-item" href="properties.html">Conseils</a></li>
+                                <li><a class="dropdown-item" href="properties.html">Constructions</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="properties-Terrains.html">Terrains</a></li>
+                                <li><a class="dropdown-item" href="properties-apartments.html">Apartments</a></li>
+                                <li><a class="dropdown-item" href="properties-Constructions.html">Constructions</a></li>
+                                <li><a class="dropdown-item" href="properties-land.html">Land</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mail">
+                                <i class="fa-solid fa-envelope"></i> bacimmo22@gmail.com
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mail">
+                                <i class="fa-solid fa-phone"></i> +233 547 080 848
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link buttontop" href="login.html">
+                                <i class="fa-solid fa-user"></i>Create Listing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+        
+        
+        
+    <div class="headinfo">
+        <span class="title color-white">Browse through our produits</span>
+        <span class="disc color-white">Browse our exclusive collection of homes, apartments, and Constructions spaces</span>
+       </div>
+    </header>
+
+
+    <section class="section">
+        <div class="container-fluid">
+           <div class="headinfo">
+            <span class="title">Discover Our Featured Properties</span>
+            <span class="disc">Browse our exclusive collection of homes, apartments, and Constructions spaces</span>
+           </div>
+
+           <div class="tab">
+               <button class="tablinks active" onclick="openTab(event, 'Villas')">Villas</button>
+            <button class="tablinks" onclick="openTab(event, 'Terrains')">Terrains</button>
+            <button class="tablinks" onclick="openTab(event, 'Constructions')">Constructions</button>
+            <button class="tablinks" onclick="openTab(event, 'land')">Land</button>
+        </div>
+        
+         <!-- Listings for villas -->
+         <div id="Villas" class="listing property active">
+            <div class="carditem">
+                <a href="propertyreservation.html?id=101" class="property-link">
+                    <div class="image-container">
+                        <img src="real project images//1 (1).jpg" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">FEATURED</span>
+                        <span class="badge badge-right">FOR SALE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Selway Villa</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> 50 Sunset Blvd, Miami, FL
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                            <span><i class="fa-solid fa-expand"></i> 250 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">$5600</div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="carditem">
+                <a href="propertyreservation.html?id=102" class="property-link">
+                    <div class="image-container">
+                        <img src="real project images/1 (2).jpg" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">FEATURED</span>
+                        <span class="badge badge-right">FOR SALE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Ocean Breeze Villa</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> 10 Beach Dr, Malibu, CA
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 4 Baths</span>
+                            <span><i class="fa-solid fa-expand"></i> 320 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">$8900</div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="carditem">
+                <a href="propertyreservation.html?id=103" class="property-link">
+                    <div class="image-container">
+                        <img src="real project images/1 (3).jpg" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">FEATURED</span>
+                        <span class="badge badge-right">FOR SALE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Palm Retreat</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> 25 Palm St, Orlando, FL
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                            <span><i class="fa-solid fa-expand"></i> 200 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">$7200</div>
+                    </div>
+                </a>
+            </div>
+            <div class="carditem">
+                <a href="propertyreservation.html?id=103" class="property-link">
+                    <div class="image-container">
+                        <img src="real project images/1 (4).jpg" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">FEATURED</span>
+                        <span class="badge badge-right">FOR SALE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Palm Retreat</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> 25 Palm St, Orlando, FL
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                            <span><i class="fa-solid fa-expand"></i> 200 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">$7200</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Listings for Terrains -->
+        <div id="Terrains" class="listing property ">
+            <div class="carditem">
+                <a href="propertyreservation.html?id=1" class="property-link">
+                    <div class="image-container">
+                        <img src="images/productimages/1st.jpeg" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">FEATURED</span>
+                        <span class="badge badge-right">FOR SALE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Selway Apartments</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> 35-60 11th St, Queens, NY
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 1 Bath</span>
+                            <span><i class="fa-solid fa-expand"></i> 160 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">$3900</div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="carditem">
+                <a href="propertyreservation.html?id=2" class="property-link">
+                    <div class="image-container">
+                        <img src="images/productimages/1st.jpeg" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">FEATURED</span>
+                        <span class="badge badge-right">FOR SALE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Downtown Condo</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> 45-20 Broadway, Manhattan, NY
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 2 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                            <span><i class="fa-solid fa-expand"></i> 120 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">$4200</div>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="carditem">
+                <a href="propertyreservation.html?id=3" class="property-link">
+                    <div class="image-container">
+                        <img src="images/productimages/1st.jpeg" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">FEATURED</span>
+                        <span class="badge badge-right">FOR SALE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Lakeside Villa</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> 100 Bay St, Brooklyn, NY
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                            <span><i class="fa-solid fa-expand"></i> 220 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">$5000</div>
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+      
+        
+       
+        
+        
+     
+        </div>
+        
+    </section>
+    
+
+    <section class="section reviews">
+        <div class="container-fluid">
+            <div class="headinfo">
+                <span class="title">Contact Us</span>
+                <span class="disc">Get in Touch with Our Team</span>
+               </div>
+        
+
+               <div class="formandinfo">
+
+<div class="right">
+    <form action="https://formspree.io/f/mblgprok" method="post">
+        <div class="first">
+         <div class="input">
+             <label for="Name">Your Name</label>
+             <input type="text" placeholder="Name" name="">
+         </div>
+         <div class="input">
+             <label for="email">Your Email</label>
+             <input type="text" placeholder="Email" name="email">
+         </div>
+ 
+     </div>
+         <div class="input">
+             <label for="subject">Your Subject</label>
+             <input type="text" placeholder="Subject">
+         </div>
+         <div class="input">
+             <label for="message">Your Subject</label>
+             <input type="text" placeholder="Write your message here" name="message">
+         </div>
+ 
+ 
+ <div>
+     <button class="buttontop blue" type="submit">Submit</button>
+ </div>
+     </form>
+</div>
+               </div>
+
+            </section>
+           
+
+          
+            
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="pscript.js"></script>
+ 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const reserveButtons = document.querySelectorAll(".reserve-btn");
+        
+            reserveButtons.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    const card = btn.closest(".property-card");
+                    if (!card) return;
+        
+                    const title = card.querySelector(".property-title")?.innerText || "No Title";
+                    const location = card.querySelector(".property-location")?.innerText || "No Location";
+                    const price = card.querySelector(".property-price")?.innerText || "0";
+                    const image = card.querySelector("img")?.getAttribute("src") || "";
+        
+                    const property = {
+                        title,
+                        location,
+                        price,
+                        image,
+                        id: title.toLowerCase().replace(/\s+/g, "-") // optional ID
+                    };
+        
+                    localStorage.setItem("selectedProperty", JSON.stringify(property));
+                    window.location.href = "properties-reservation.html";
+                });
+            });
+        });
+        </script>
+        
+    
+</body>
+</html>
