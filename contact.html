@@ -1,251 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/logo-bg-white.jpg">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Basia Conseils & Immobilier</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/logo-bg-white.jpg">
+  <link rel="stylesheet" href="contact.css">
+  <title>Basia Conseils & Immobilier</title>
 </head>
+
 <body>
-    <header class="header-none">
-       <!-- Include Font Awesome for Icons (if not already included) -->
+  <!-- Header & Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo-no bg-png.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-
-       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo-white.png" alt="Logo" class="logo">
-            </a>
-    
-            <!-- Offcanvas Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- Offcanvas Menu -->
-            <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link activenav" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="properties.html" id="propertiesDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Properties
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="properties.html">Terrains
-                                </a></li>
-                                <li><a class="dropdown-item" href="properties.html">Villas
-                                </a></li>
-                                <li><a class="dropdown-item" href="properties.html">Conseils</a></li>
-                                <li><a class="dropdown-item" href="properties.html">Constructions</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="properties-houses.html">Houses</a></li>
-                                <li><a class="dropdown-item" href="properties-apartments.html">Apartments</a></li>
-                                <li><a class="dropdown-item" href="properties-commercial.html">Commercial</a></li>
-                                <li><a class="dropdown-item" href="properties-land.html">Land</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mail">
-                                <i class="fa-solid fa-envelope"></i> bacimmo22@gmail.com
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mail">
-                                <i class="fa-solid fa-phone"></i> +233 547 080 848
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link buttontop" href="login.html">
-                                <i class="fa-solid fa-user"></i>Create Listing
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Properties</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="properties.html">Terrains</a></li>
+                  <li><a class="dropdown-item" href="properties.html">Villas</a></li>
+                  <li><a class="dropdown-item" href="properties.html">Conseils</a></li>
+                  <li><a class="dropdown-item" href="properties.html">Constructions</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="properties-houses.html">Houses</a></li>
+                  <li><a class="dropdown-item" href="properties-apartments.html">Apartments</a></li>
+                  <li><a class="dropdown-item" href="properties-commercial.html">Commercial</a></li>
+                  <li><a class="dropdown-item" href="properties-land.html">Land</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="mailto:bacimmo22@gmail.com"><i class="fa fa-envelope"></i> bacimmo22@gmail.com</a></li>
+              <li class="nav-item"><a class="nav-link" href="tel:+233547080848"><i class="fa fa-phone"></i> +233 547 080 848</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
+  </header>
 
-        
-        
-        
+  <!-- Contact Section -->
+  <section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+      <img src="images/logo-white.png" alt="Company Logo" class="mb-3" style="max-width: 150px;">
+      <h2>Contact Us</h2>
+      <p>Get in Touch with Our Team</p>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+          <p><i class="fa fa-phone"></i> +225 78 93 82 32</p>
+          <p><i class="fa fa-envelope"></i> bacimmo22@gmail.com</p>
+          <p><i class="fa fa-map-marker-alt"></i> Plateau Dokui, Côte d'Ivoire</p>
+        </div>
+      </div>
     </div>
-    </header>
-    <section>
-        <div class="contact-information">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo-white.png" alt="Logo" class="logo">
-            </a>
-            <div class="headinfo">
-                <span class="title color-white">Contact Us</span>
-                <span class="disc color-white">Get in Touch with Our Teaam</span>
-               </div>
+  </section>
 
-
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <div class="info">+225 78 93 82 32</div>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div class="info">bacimmo22@gmail.com</div>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-map-marker-alt"></i>
-                    <div class="info">Situé au Plateau Dokui , Côte d'Ivoire</div>
-                </div>
+  <!-- Contact Form -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h3 class="mb-4 text-center">Send Us a Message</h3>
+          <form action="https://formspree.io/f/mblgprok" method="post">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
             </div>
+            <div class="mb-3">
+              <label for="subject">Your Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
         </div>
-    </section>
-
-    <section class="section reviews">
-        <div class="container-fluid">
-            <div class="headinfo">
-                <span class="title">Contact Us</span>
-                <span class="disc">Get in Touch with Our Teaam</span>
-               </div>
-        
-
-               <div class="formandinfo">
-
-<div class="right">
-    <form action="https://formspree.io/f/mblgprok" method="post">
-       <div class="first">
-        <div class="input">
-            <label for="Name">Your Name</label>
-            <input type="text" placeholder="Name" name="">
-        </div>
-        <div class="input">
-            <label for="email">Your Email</label>
-            <input type="text" placeholder="Email" name="email">
-        </div>
-
+      </div>
     </div>
-        <div class="input">
-            <label for="subject">Your Subject</label>
-            <input type="text" placeholder="Subject">
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: linear-gradient(135deg, #0a1930, #142850); color: white; padding: 60px 20px; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; text-align: center;">
+  
+      <!-- Logo -->
+      <div>
+        <img src="images/logo-bg-white.jpg" alt="Logo" style="max-width: 100px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <div class="input">
-            <label for="message">Your Subject</label>
-            <input type="text" placeholder="Write your message here" name="message">
-        </div>
+      </div>
+  
+      <!-- Services -->
+      <div style="text-align: left;">
+        <h3 style="color: #3399ff;">Our Services</h3>
+        <p><a href="#" style="text-decoration: none;">Property Listings</a></p>
+        <p><a href="#" style="text-decoration: none;">Real Estate Consultation</a></p>
+        <p><a href="#" style="text-decoration: none;">Property Management</a></p>
+        <p><a href="#" style="text-decoration: none;">Investment Advisory</a></p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div style="text-align: left;">
+        <h3 style="color: #3399ff;">Quick Links</h3>
+        <p><a href="#" style="text-decoration: none;">About Us</a></p>
+        <p><a href="#" style="text-decoration: none;">Browse Properties</a></p>
+        <p><a href="#" style="text-decoration: none;">Our Policies</a></p>
+        <p><a href="#" style="text-decoration: none;">Contact Support</a></p>
+      </div>
+  
+      <!-- Contact -->
+      <div style="text-align: left;">
+        <h3 style="color: #3399ff;">Contact Us</h3>
+        <p style="font-size: 20px;"><i class="fas fa-map-marker-alt"></i> Location</p>
+        <p style="font-size: 20px;"><i class="fas fa-phone-alt"></i>+225 272 220 7202</p>
+        <p style="font-size: 20px;"><i class="fas fa-envelope"></i> bacimmo22@gmail.com</p>
+      </div>
+    </div>
+  
+    <!-- Newsletter -->
+    <div style="max-width: 600px; margin: 40px auto 0; text-align: center;">
+      <form style="display: flex;">
+        <input type="email" placeholder="Subscribe to our newsletter" required style="flex:1; padding: 10px; border: 1px solid white; background: transparent; color: white; border-radius: 5px 0 0 5px;">
+        <button type="submit" class="subscribe" style="background: #3399ff; border: none; padding: 10px 20px; border-radius: 0 5px 5px 0; color: white; cursor: pointer; transition: 0.3s;">Send</button>
+      </form>
+    </div>
+  
+    <hr style="border-color: rgba(255,255,255,0.2); margin: 40px 0;">
+  
+    <p style="text-align: center; font-size: 14px;">© Basia Officiel 2025 – All Rights Reserved.</p>
 
-
-<div>
-    <button class="buttontop blue" type="submit">Submit</button>
-</div>
-    </form>
-</div>
-               </div>
-
-            </section>
-          
-
-
-            <section class="footer-body">
-                <footer>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col" id="company">
-                                <img src="images/logo-no bg-png.png" alt="Basia Conseil Logo" class="logo">
-                                <p>
-                                    Basia Conseil is your trusted real estate partner in Côte d'Ivoire. 
-                                    We provide top-quality properties and seamless transactions for individuals and businesses.
-                                </p>
-                                <div class="social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-            
-                            <div class="col" id="services">
-                                <h3>Our Services</h3>
-                                <div class="links">
-                                    <a href="#">Property Listings</a>
-                                    <a href="#">Real Estate Consultation</a>
-                                    <a href="#">Property Management</a>
-                                    <a href="#">Investment Advisory</a>
-                                </div>
-                            </div>
-            
-                            <div class="col" id="useful-links">
-                                <h3>Quick Links</h3>
-                                <div class="links">
-                                    <a href="#">About Us</a>
-                                    <a href="#">Browse Properties</a>
-                                    <a href="#">Our Policies</a>
-                                    <a href="#">Contact Support</a>
-                                </div>
-                            </div>
-            
-                            <div class="col" id="contact">
-                                <h3>Contact Us</h3>
-                                <div class="contact-details">
-                                    <i class="fa fa-location"></i>
-                                    <p>Abidjan, Côte d'Ivoire</p>
-                                </div>
-                                <div class="contact-details">
-                                    <i class="fa fa-phone"></i>
-                                    <p>+225-XXXX-XXXX</p>
-                                </div>
-                                <div class="contact-details">
-                                    <i class="fa fa-envelope"></i>
-                                    <p>contact@basiaconseil.com</p>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="row2">
-                            <div class="form">
-                                <form action="">
-                                    <input type="text" placeholder="Subscribe to our newsletter...">
-                                    <button><i class="fa fa-paper-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
-            
-                        <div class="footer-bottom">
-                            <p>© 2025 Basia Conseil. All rights reserved. | Designed for the Côte d'Ivoire real estate market.</p>
-                        </div>
-                    </div>
-                </footer>
-            </section>
-            
    
+  </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
