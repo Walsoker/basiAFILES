@@ -1,0 +1,86 @@
+.hero-nav {
+    position: relative;
+    background: url('images/city.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  /* Overlay sombre pour améliorer la lisibilité */
+  .hero-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .navbar {
+    position: relative;
+    z-index: 10;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo {
+    height: 40px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.25rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: white !important;
+    transform: translateY(-2px);
+  }
+  
+  .dropdown-menu {
+    border: none;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .dropdown-item {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 5;
+    padding-top: 15vh;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Animation pour le menu mobile */
+  .offcanvas {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .hero-content {
+      padding-top: 10vh;
+    }
+  }

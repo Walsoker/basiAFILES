@@ -60,10 +60,10 @@
                             Pages
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="properties-houses.html">Houses</a></li>
-                            <li><a class="dropdown-item" href="properties-apartments.html">Apartments</a></li>
-                            <li><a class="dropdown-item" href="properties-commercial.html">Commercial</a></li>
-                            <li><a class="dropdown-item" href="properties-land.html">Land</a></li>
+                            <li><a class="dropdown-item" href="properties.html">Houses</a></li>
+                            <li><a class="dropdown-item" href="properties.html">Apartments</a></li>
+                            <li><a class="dropdown-item" href="properties.html">Commercial</a></li>
+                            <li><a class="dropdown-item" href="properties.html">Land</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -307,125 +307,127 @@
         
     </section>
 
-    <section class="section contact-section">
-        <div class="container">
-          <div class="section-header text-center">
-            <span class="section-subtitle">Contact Us</span>
-            <h2 class="section-title">Get in Touch with Our Team</h2>
-            <div class="divider"></div>
-          </div>
-          
-          <div class="contact-container">
-      
-            <div class="contact-form-container">
-              <form action="https://formspree.io/f/mblgprok" method="post" class="contact-form">
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-              </form>
+    <section class="form-section">
+        <div class="container-fluid">
+            <div class="headinfo">
+                <span class="title">Contactez-nous</span>
+                <span class="disc">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais</span>
             </div>
-          </div>
-        </div>
-      </section>
-            <section>
-                <div class="contact-information">
-                    <div class="headinfo">
-                        <span class="title color-white">Contact Us</span>
-                        <span class="disc color-white">Get in Touch with Our Teaam</span>
-                       </div>
-
-
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fa-solid fa-phone"></i>
-                            <div class="info">+225 272 220 7202
+    
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="https://formspree.io/f/mblgprok" method="post" class="elegant-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="firstName"><i class="fas fa-user"></i> Prénom</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="lastName"><i class="fas fa-user"></i> Nom</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Votre nom" required>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div class="info">bacimmo22@gmail.com</div>
+    
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="phone"><i class="fas fa-phone"></i> Téléphone</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+                                </div>
+                            </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-map-marker-alt"></i>
-                            <div class="info">Situé au Plateau Dokui , Côte d'Ivoire</div>
+    
+                        <div class="mb-4">
+                            <div class="form-group">
+                                <label for="subject"><i class="fas fa-tag"></i> Sujet</label>
+                                <select class="form-control" id="subject" name="subject" required>
+                                    <option value="" disabled selected>Sélectionnez un sujet</option>
+                                    <option value="property">Demande d'information sur une propriété</option>
+                                    <option value="visit">Demande de visite</option>
+                                    <option value="estimate">Estimation de bien</option>
+                                    <option value="other">Autre demande</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
+    
+                        <div class="mb-4">
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-comment"></i> Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                            </div>
+                        </div>
+    
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                            <label class="form-check-label" for="newsletter">Je souhaite recevoir les newsletters et offres promotionnelles</label>
+                        </div>
+    
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fas fa-paper-plane"></i> Envoyer le message
+                            </button>
+                        </div>
+                    </form>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
+        <section class="contact-info-section">
+            <div class="container">
+              <div class="contact-header">
+                <h2 class="contact-title">Contactez-nous</h2>
+                <p class="contact-subtitle">Notre équipe est à votre disposition</p>
+              </div>
+          
+              <div class="contact-grid">
+                <!-- Téléphone -->
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <h3>Téléphone</h3>
+                  <a href="tel:+2252722207202" class="contact-link">+225 272 220 7202</a>
+                  <p class="contact-hours">Lun-Ven: 8h-18h</p>
+                </div>
+          
+                <!-- Email -->
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <h3>Email</h3>
+                  <a href="mailto:bacimmo22@gmail.com" class="contact-link">bacimmo22@gmail.com</a>
+                  <p class="contact-hours">Réponse sous 24h</p>
+                </div>
+          
+                <!-- Adresse -->
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <h3>Adresse</h3>
+                  <p>Plateau Dokui</p>
+                  <p>Abidjan, Côte d'Ivoire</p>
+                  <a href="https://maps.google.com/?q=Plateau Dokui, Abidjan" class="map-link" target="_blank">
+                    Voir sur la carte
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
 
 
-           
-
-            <footer style="background: linear-gradient(135deg, #0a1930, #142850); color: white; padding: 60px 20px; font-family: Arial, sans-serif;">
-                <div style="max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; text-align: center;">
-              
-                  <!-- Logo -->
-                  <div>
-                    <img src="ton-logo.png" alt="Logo" style="max-width: 100px; margin-bottom: 20px;">
-                    <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
-                      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                      <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                      <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                  </div>
-              
-                  <!-- Services -->
-                  <div style="text-align: left;">
-                    <h3 style="color: #3399ff;">Our Services</h3>
-                    <p><a href="#">Property Listings</a></p>
-                    <p><a href="#">Real Estate Consultation</a></p>
-                    <p><a href="#">Property Management</a></p>
-                    <p><a href="#">Investment Advisory</a></p>
-                  </div>
-              
-                  <!-- Quick Links -->
-                  <div style="text-align: left;">
-                    <h3 style="color: #3399ff;">Quick Links</h3>
-                    <p><a href="#">About Us</a></p>
-                    <p><a href="#">Browse Properties</a></p>
-                    <p><a href="#">Our Policies</a></p>
-                    <p><a href="#">Contact Support</a></p>
-                  </div>
-              
-                  <!-- Contact -->
-                  <div style="text-align: left;">
-                    <h3 style="color: #3399ff;">Contact Us</h3>
-                    <p style="font-size: 20px;"><i class="fas fa-map-marker-alt"></i> Location</p>
-                    <p style="font-size: 20px;"><i class="fas fa-phone-alt"></i> +123 456 7890</p>
-                    <p style="font-size: 20px;"><i class="fas fa-envelope"></i> info@example.com</p>
-                  </div>
-                </div>
-              
-                <!-- Newsletter -->
-                <div style="max-width: 600px; margin: 40px auto 0; text-align: center;">
-                  <form style="display: flex;">
-                    <input type="email" placeholder="Subscribe to our newsletter" required style="flex:1; padding: 10px; border: 1px solid white; background: transparent; color: white; border-radius: 5px 0 0 5px;">
-                    <button type="submit" class="subscribe" style="background: #3399ff; border: none; padding: 10px 20px; border-radius: 0 5px 5px 0; color: white; cursor: pointer; transition: 0.3s;">Send</button>
-                  </form>
-                </div>
-              
-                <hr style="border-color: rgba(255,255,255,0.2); margin: 40px 0;">
-              
-                <p style="text-align: center; font-size: 14px;">© Basia Officiel 2025 – All Rights Reserved.</p>
-              </footer>
+             
               
               <!-- Font Awesome CDN for icons -->
               <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -434,4 +436,61 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+<footer style="background: linear-gradient(135deg, #0a1930, #142850); color: white; padding: 60px 20px; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; text-align: center;">
+  
+      <!-- Logo -->
+      <div>
+        <img src="images/logo-bg-white.jpg" alt="Logo" style="max-width: 100px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+  
+      <!-- Services -->
+      <div style="text-align: left;">
+        <h3 style="color: #3399ff;">Our Services</h3>
+        <p><a href="#">Property Listings</a></p>
+        <p><a href="#">Real Estate Consultation</a></p>
+        <p><a href="#">Property Management</a></p>
+        <p><a href="#">Investment Advisory</a></p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div style="text-align: left;">
+        <h3 style="color: #3399ff;">Quick Links</h3>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Browse Properties</a></p>
+        <p><a href="#">Our Policies</a></p>
+        <p><a href="#">Contact Support</a></p>
+      </div>
+  
+      <!-- Contact -->
+      <div style="text-align: left;">
+        <h3 style="color: #3399ff;">Contact Us</h3>
+        <p style="font-size: 20px;"><i class="fas fa-map-marker-alt"></i> Location</p>
+        <p style="font-size: 20px;"><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+        <p style="font-size: 20px;"><i class="fas fa-envelope"></i> info@example.com</p>
+      </div>
+    </div>
+  
+    <!-- Newsletter -->
+    <div style="max-width: 600px; margin: 40px auto 0; text-align: center;">
+      <form style="display: flex;">
+        <input type="email" placeholder="Subscribe to our newsletter" required style="flex:1; padding: 10px; border: 1px solid white; background: transparent; color: white; border-radius: 5px 0 0 5px;">
+        <button type="submit" class="subscribe" style="background: #3399ff; border: none; padding: 10px 20px; border-radius: 0 5px 5px 0; color: white; cursor: pointer; transition: 0.3s;">Send</button>
+      </form>
+    </div>
+  
+    <hr style="border-color: rgba(255,255,255,0.2); margin: 40px 0;">
+  
+    <p style="text-align: center; font-size: 14px;">© Basia Officiel 2025 – All Rights Reserved.</p>
+
+   
+  </footer>
+
 </html>

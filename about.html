@@ -7,268 +7,250 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" type="image/png" href="images/logo-bg-white.jpg">
     <link rel="stylesheet" href="style.css">
-
-    <title>Basia Conseils & Immobilier</title>
+    <title>Basia Conseils & Immobilier | About Us</title>
+    <style>
+       
+        
+        .about-img {
+            border-radius: 10px;
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            color: #003366;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #003366;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .contact-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .btn-submit {
+            background: #003366;
+            color: white;
+            padding: 12px 30px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s;
+        }
+        
+        .btn-submit:hover {
+            background: #0b5ed7;
+            transform: translateY(-3px);
+        }
+        
+        .team-card {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .check-item {
+            color: #003366;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header class="header-none">
-       <!-- Include Font Awesome for Icons (if not already included) -->
-
-
-       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo-white.png" alt="Logo" class="logo">
-            </a>
+    <header class="background-properties">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-white.png" alt="Logo" class="logo">
+                </a>
     
-            <!-- Offcanvas Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
     
-            <!-- Offcanvas Menu -->
-            <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="properties.html" id="propertiesDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false"> Properties </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="properties.html">Terrains</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">Villas</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">Conseils</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">Constructions</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="properties-Terrains.html">Terrains</a></li>
+                                    <li><a class="dropdown-item" href="properties-apartments.html">Apartments</a></li>
+                                    <li><a class="dropdown-item" href="properties-Constructions.html">Constructions</a></li>
+                                    <li><a class="dropdown-item" href="properties-land.html">Land</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link activenav" href="about.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link mail"><i class="fa-solid fa-envelope"></i> bacimmo22@gmail.com</a></li>
+                            <li class="nav-item"><a class="nav-link mail"><i class="fa-solid fa-phone"></i> +233 547 080 848</a></li>
+                            <li class="nav-item"><a class="nav-link buttontop" href="login.html"><i class="fa-solid fa-user"></i>Create Listing</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link activenav" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="properties.html" id="propertiesDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Properties
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="properties.html">Terrains
-                                </a></li>
-                                <li><a class="dropdown-item" href="properties.html">Villas
-                                </a></li>
-                                <li><a class="dropdown-item" href="properties.html">Conseils</a></li>
-                                <li><a class="dropdown-item" href="properties.html">Constructions</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="properties-houses.html">Houses</a></li>
-                                <li><a class="dropdown-item" href="properties-apartments.html">Apartments</a></li>
-                                <li><a class="dropdown-item" href="properties-commercial.html">Commercial</a></li>
-                                <li><a class="dropdown-item" href="properties-land.html">Land</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mail">
-                                <i class="fa-solid fa-envelope"></i> bacimmo22@gmail.com
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mail">
-                                <i class="fa-solid fa-phone"></i> +233 547 080 848
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link buttontop" href="login.html">
-                                <i class="fa-solid fa-user"></i>Create Listing
-                            </a>
-                        </li>
-                    </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="mycontainer">
+                <div class="content">
+                    <span class="contentspan span1">Welcome to BACIMMO!</span>
+                    <span class="span2 contentspan">ABOUT US!</span>
                 </div>
             </div>
         </div>
-    </nav>
-
-        
-        
-        <
-    </div>
     </header>
-    <section>
-        <div class="contact-information">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo-white.png" alt="Logo" class="logo">
-            </a>
-            <div class="headinfo">
-                <span class="title color-white">About Us</span>
-                <span class="disc color-white">Learn More About Us</span>
-                <span class="disc color-white text-center">Basia Conseils & Immobilier is a leading real estate company dedicated to providing high-quality, affordable, and convenient properties to our clients. We believe in creating lasting memories with our clients and strive to make homeownership a joyful experience for all.
-                    Our team of expert professionals and a commitment to excellence will guide you through the process of finding the perfect home, from researching local listings to selecting the right property, to arranging an appointment to finalize your purchase.</span>
-               </div>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Story</h2>
+                <p class="lead text-muted"><p class="lead text-muted">Basia Conseils & Immobilier is a leading real estate company dedicated to providing high-quality, affordable, and convenient properties to our clients. We believe in creating lasting memories with our clients and strive to make homeownership a joyful experience for all. Our team of expert professionals and a commitment to excellence will guide you through the process of finding the perfect home, from researching local listings to selecting the right property, to arranging an appointment to finalize your purchase.</p>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Basia Conseils & Immobilier</h2>
+                   
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle check-item"></i>
+                                <span>Professional Team</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle check-item"></i>
+                                <span>Trusted Service</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle check-item"></i>
+                                <span>Wide Selection</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle check-item"></i>
+                                <span>Personalized Approach</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <img src="real project images/staff.jpg" alt="Our Team" class="about-img">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="real project images/staff2.jpg" alt="Our Office" class="about-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="section reviews">
-        <div class="container-fluid">
-            <div class="headinfo">
-                <span class="title">About us</span>
-                <span class="disc">Get to know Us</span>
-               </div>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="about">
-    <div class="leftabout">
-        <div class="description">
-            <h2>Basia Conseils & Immobilier</h2>
-           
-        </div>
-
-        <div class="staff">
-            <img src="real project images/staff.jpg" alt="">
-            <img src="real project images/staff2.jpg" alt="">
-        </div>
-    </div>
-</div>
-
-
-
-
-               <div class="formandinfo">
-
-<div class="right">
-    <form action="https://formspree.io/f/mblgprok" method="post">
-        <div class="first">
-         <div class="input">
-             <label for="Name">Your Name</label>
-             <input type="text" placeholder="Name" name="">
-         </div>
-         <div class="input">
-             <label for="email">Your Email</label>
-             <input type="text" placeholder="Email" name="email">
-         </div>
- 
-     </div>
-         <div class="input">
-             <label for="subject">Your Subject</label>
-             <input type="text" placeholder="Subject">
-         </div>
-         <div class="input">
-             <label for="message">Your Subject</label>
-             <input type="text" placeholder="Write your message here" name="message">
-         </div>
- 
- 
- <div>
-     <button class="buttontop blue" type="submit">Submit</button>
- </div>
-     </form>
-</div>
-               </div>
-<
-            </section>
-          <section>
-            <div class="staff">
-            
+    <!-- Team Section -->
+    
+    <footer style="background: linear-gradient(135deg, #0a1930, #142850); color: white; padding: 60px 20px; font-family: Arial, sans-serif;">
+        <div style="max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; text-align: center;">
+      
+          <!-- Logo -->
+          <div>
+            <img src="images/logo-bg-white.jpg" alt="Logo" style="max-width: 100px; margin-bottom: 20px;">
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
             </div>
-          </section>
-
-
-            <section class="footer-body">
-                <footer>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col" id="company">
-                                <img src="images/logo-no bg-png.png" alt="Basia Conseil Logo" class="logo">
-                                <p>
-                                    Basia Conseil is your trusted real estate partner in Côte d'Ivoire. 
-                                    We provide top-quality properties and seamless transactions for individuals and businesses.
-                                </p>
-                                <div class="social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-            
-                            <div class="col" id="services">
-                                <h3>Our Services</h3>
-                                <div class="links">
-                                    <a href="#">Property Listings</a>
-                                    <a href="#">Real Estate Consultation</a>
-                                    <a href="#">Property Management</a>
-                                    <a href="#">Investment Advisory</a>
-                                </div>
-                            </div>
-            
-                            <div class="col" id="useful-links">
-                                <h3>Quick Links</h3>
-                                <div class="links">
-                                    <a href="#">About Us</a>
-                                    <a href="#">Browse Properties</a>
-                                    <a href="#">Our Policies</a>
-                                    <a href="#">Contact Support</a>
-                                </div>
-                            </div>
-            
-                            <div class="col" id="contact">
-                                <h3>Contact Us</h3>
-                                <div class="contact-details">
-                                    <i class="fa fa-location"></i>
-                                    <p>Abidjan, Côte d'Ivoire</p>
-                                </div>
-                                <div class="contact-details">
-                                    <i class="fa fa-phone"></i>
-                                    <p>+225-XXXX-XXXX</p>
-                                </div>
-                                <div class="contact-details">
-                                    <i class="fa fa-envelope"></i>
-                                    <p>contact@basiaconseil.com</p>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="row2">
-                            <div class="form">
-                                <form action="">
-                                    <input type="text" placeholder="Subscribe to our newsletter...">
-                                    <button><i class="fa fa-paper-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
-            
-                        <div class="footer-bottom">
-                            <p>© 2025 Basia Conseil. All rights reserved. | Designed for the Côte d'Ivoire real estate market.</p>
-                        </div>
-                    </div>
-                </footer>
-            </section>
-            
-
-   
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+          </div>
+      
+          <!-- Services -->
+          <div style="text-align: left;">
+            <h3 style="color: #3399ff;">Our Services</h3>
+            <p><a href="#">Property Listings</a></p>
+            <p><a href="#">Real Estate Consultation</a></p>
+            <p><a href="#">Property Management</a></p>
+            <p><a href="#">Investment Advisory</a></p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div style="text-align: left;">
+            <h3 style="color: #3399ff;">Quick Links</h3>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Browse Properties</a></p>
+            <p><a href="#">Our Policies</a></p>
+            <p><a href="#">Contact Support</a></p>
+          </div>
+      
+          <!-- Contact -->
+          <div style="text-align: left;">
+            <h3 style="color: #3399ff;">Contact Us</h3>
+            <p style="font-size: 20px;"><i class="fas fa-map-marker-alt"></i> Location</p>
+            <p style="font-size: 20px;"><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+            <p style="font-size: 20px;"><i class="fas fa-envelope"></i> info@example.com</p>
+          </div>
+        </div>
+      
+        <!-- Newsletter -->
+        <div style="max-width: 600px; margin: 40px auto 0; text-align: center;">
+          <form style="display: flex;">
+            <input type="email" placeholder="Subscribe to our newsletter" required style="flex:1; padding: 10px; border: 1px solid white; background: transparent; color: white; border-radius: 5px 0 0 5px;">
+            <button type="submit" class="subscribe" style="background: #3399ff; border: none; padding: 10px 20px; border-radius: 0 5px 5px 0; color: white; cursor: pointer; transition: 0.3s;">Send</button>
+          </form>
+        </div>
+      
+        <hr style="border-color: rgba(255,255,255,0.2); margin: 40px 0;">
+      
+        <p style="text-align: center; font-size: 14px;">© Basia Officiel 2025 – All Rights Reserved.</p>
+    
+       
+      </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

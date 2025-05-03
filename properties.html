@@ -7,100 +7,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" type="image/png" href="images/logo-bg-white.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="properties.css">
 
     <title>Basia Conseils & Immobilier</title>
 </head>
 <body>
-    <header class="background-properties">
-       <!-- Include Font Awesome for Icons (if not already included) -->
-       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <!-- Logo -->
+    <header class="hero-nav">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <!-- Logo avec transparence -->
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo-white.png" alt="Logo" class="logo">
+              <img src="images/logo-white.png" alt="Logo" class="logo">
             </a>
-    
-            <!-- Offcanvas Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
             </button>
-    
-            <!-- Offcanvas Menu -->
-            <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle activenav" href="properties.html" id="propertiesDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Properties
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="properties.html">Terrains
-                                </a></li>
-                                <li><a class="dropdown-item" href="properties.html">Villas
-                                </a></li>
-                                <li><a class="dropdown-item" href="properties.html">Conseils</a></li>
-                                <li><a class="dropdown-item" href="properties.html">Constructions</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="properties-Terrains.html">Terrains</a></li>
-                                <li><a class="dropdown-item" href="properties-apartments.html">Apartments</a></li>
-                                <li><a class="dropdown-item" href="properties-Constructions.html">Constructions</a></li>
-                                <li><a class="dropdown-item" href="properties-land.html">Land</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mail">
-                                <i class="fa-solid fa-envelope"></i> bacimmo22@gmail.com
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mail">
-                                <i class="fa-solid fa-phone"></i> +233 547 080 848
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link buttontop" href="login.html">
-                                <i class="fa-solid fa-user"></i>Create Listing
-                            </a>
-                        </li>
+      
+            <!-- Menu Offcanvas -->
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="properties.html" data-bs-toggle="dropdown">
+                      Properties
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="properties.html">Terrains</a></li>
+                      <li><a class="dropdown-item" href="properties.html">Villas</a></li>
+                      <li><a class="dropdown-item" href="properties.html">Conseils</a></li>
+                      <li><a class="dropdown-item" href="properties.html">Constructions</a></li>
                     </ul>
-                </div>
+                  </li>
+      
+                  <!-- ... autres éléments du menu ... -->
+      
+                 
+                </ul>
+              </div>
             </div>
+          </div>
+        </nav>
+      
+        <!-- Hero Content -->
+        <div class="hero-content text-center">
+          <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Browse through our produits</h1>
+            <p class="lead mb-4">Browse our exclusive collection of homes, apartments, and Constructions spaces</p>
+            <a href="properties.html" class="btn btn-light btn-lg px-4">Explore Now</a>
+          </div>
         </div>
-    </nav>
-
-
-
-        
-        
-        
-    <div class="headinfo">
-        <span class="title color-white">Browse through our produits</span>
-        <span class="disc color-white">Browse our exclusive collection of homes, apartments, and Constructions spaces</span>
-       </div>
-    </header>
+      </header>
 
 
     <section class="section">
@@ -329,50 +294,139 @@
     </section>
     
 
-    <section class="section reviews">
+    <section class="form-section">
         <div class="container-fluid">
             <div class="headinfo">
-                <span class="title">Contact Us</span>
-                <span class="disc">Get in Touch with Our Team</span>
-               </div>
-        
+                <span class="title">Contactez-nous</span>
+                <span class="disc">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais</span>
+            </div>
+    
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="https://formspree.io/f/mblgprok" method="post" class="elegant-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="firstName"><i class="fas fa-user"></i> Prénom</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="lastName"><i class="fas fa-user"></i> Nom</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Votre nom" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="phone"><i class="fas fa-phone"></i> Téléphone</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-4">
+                            <div class="form-group">
+                                <label for="subject"><i class="fas fa-tag"></i> Sujet</label>
+                                <select class="form-control" id="subject" name="subject" required>
+                                    <option value="" disabled selected>Sélectionnez un sujet</option>
+                                    <option value="property">Demande d'information sur une propriété</option>
+                                    <option value="visit">Demande de visite</option>
+                                    <option value="estimate">Estimation de bien</option>
+                                    <option value="other">Autre demande</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="mb-4">
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-comment"></i> Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                            </div>
+                        </div>
+    
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                            <label class="form-check-label" for="newsletter">Je souhaite recevoir les newsletters et offres promotionnelles</label>
+                        </div>
+    
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fas fa-paper-plane"></i> Envoyer le message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-               <div class="formandinfo">
-
-<div class="right">
-    <form action="https://formspree.io/f/mblgprok" method="post">
-        <div class="first">
-         <div class="input">
-             <label for="Name">Your Name</label>
-             <input type="text" placeholder="Name" name="">
-         </div>
-         <div class="input">
-             <label for="email">Your Email</label>
-             <input type="text" placeholder="Email" name="email">
-         </div>
- 
-     </div>
-         <div class="input">
-             <label for="subject">Your Subject</label>
-             <input type="text" placeholder="Subject">
-         </div>
-         <div class="input">
-             <label for="message">Your Subject</label>
-             <input type="text" placeholder="Write your message here" name="message">
-         </div>
- 
- 
- <div>
-     <button class="buttontop blue" type="submit">Submit</button>
- </div>
-     </form>
-</div>
-               </div>
-
-            </section>
-           
-
-          
+    <footer style="background: linear-gradient(135deg, #0a1930, #142850); color: white; padding: 60px 20px; font-family: Arial, sans-serif;">
+        <div style="max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; text-align: center;">
+      
+          <!-- Logo -->
+          <div>
+            <img src="images/logo-bg-white.jpg" alt="Logo" style="max-width: 100px; margin-bottom: 20px;">
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+      
+          <!-- Services -->
+          <div style="text-align: left;">
+            <h3 style="color: #3399ff;">Our Services</h3>
+            <p><a href="#">Property Listings</a></p>
+            <p><a href="#">Real Estate Consultation</a></p>
+            <p><a href="#">Property Management</a></p>
+            <p><a href="#">Investment Advisory</a></p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div style="text-align: left;">
+            <h3 style="color: #3399ff;">Quick Links</h3>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Browse Properties</a></p>
+            <p><a href="#">Our Policies</a></p>
+            <p><a href="#">Contact Support</a></p>
+          </div>
+      
+          <!-- Contact -->
+          <div style="text-align: left;">
+            <h3 style="color: #3399ff;">Contact Us</h3>
+            <p style="font-size: 20px;"><i class="fas fa-map-marker-alt"></i> Location</p>
+            <p style="font-size: 20px;"><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+            <p style="font-size: 20px;"><i class="fas fa-envelope"></i> info@example.com</p>
+          </div>
+        </div>
+      
+        <!-- Newsletter -->
+        <div style="max-width: 600px; margin: 40px auto 0; text-align: center;">
+          <form style="display: flex;">
+            <input type="email" placeholder="Subscribe to our newsletter" required style="flex:1; padding: 10px; border: 1px solid white; background: transparent; color: white; border-radius: 5px 0 0 5px;">
+            <button type="submit" class="subscribe" style="background: #3399ff; border: none; padding: 10px 20px; border-radius: 0 5px 5px 0; color: white; cursor: pointer; transition: 0.3s;">Send</button>
+          </form>
+        </div>
+      
+        <hr style="border-color: rgba(255,255,255,0.2); margin: 40px 0;">
+      
+        <p style="text-align: center; font-size: 14px;">© Basia Officiel 2025 – All Rights Reserved.</p>
+    
+       
+      </footer>
+    
             
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
