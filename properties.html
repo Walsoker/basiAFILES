@@ -13,56 +13,91 @@
 </head>
 <body>
     <header class="hero-nav">
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <!-- Logo avec transparence -->
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo-white.png" alt="Logo" class="logo">
-            </a>
-      
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <!-- Menu Offcanvas -->
-            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-white">Menu</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                  
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="properties.html" data-bs-toggle="dropdown">
-                      Properties
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="properties.html">Terrains</a></li>
-                      <li><a class="dropdown-item" href="properties.html">Villas</a></li>
-                      <li><a class="dropdown-item" href="properties.html">Conseils</a></li>
-                      <li><a class="dropdown-item" href="properties.html">Constructions</a></li>
-                    </ul>
-                  </li>
-      
-                  <!-- ... autres éléments du menu ... -->
-      
-                 
-                </ul>
-              </div>
+        <!-- Barre de Navigation -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-white.png" alt="Logo" class="logo">
+                </a>
+        
+                <!-- Offcanvas Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link activenav" href="index.html">Acceuil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="properties.html" id="propertiesDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Properties
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/properties.html">Terrains
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="/properties.html">Villas
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="/properties.html">Conseils</a></li>
+                                    <li><a class="dropdown-item" href="/properties.html">Constructions</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/">Résidences</a></li>
+                                    <li><a class="dropdown-item" href="/properties.html">Appartements standing</a></li>
+                                    <li><a class="dropdown-item" href="/properties.html">Espaces professionnels</a></li>
+                                    <li><a class="dropdown-item" href="/properties.html">Parcelles</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">A Propos de nous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mail">
+                                    <i class="fa-solid fa-envelope"></i> bacimmo22@gmail.com
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mail">
+                                    <i class="fa-solid fa-phone"></i> +225 272 220 7202
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link buttontop" href="login.html">
+                                    <i class="fa-solid fa-user"></i>Publier une annonce
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </nav>
       
-        <!-- Hero Content -->
+        <!-- Contenu Hero -->
         <div class="hero-content text-center">
           <div class="container">
-            <h1 class="display-4 fw-bold mb-3">Browse through our produits</h1>
-            <p class="lead mb-4">Browse our exclusive collection of homes, apartments, and Constructions spaces</p>
-            <a href="properties.html" class="btn btn-light btn-lg px-4">Explore Now</a>
+            <h1 class="display-4 fw-bold mb-3">Parcourez nos produits</h1>
+            <p class="lead mb-4">Découvrez notre collection exclusive de maisons, appartements et espaces de construction</p>
+            <a href="properties.html" class="btn btn-light btn-lg px-4">Explorer</a>
           </div>
         </div>
       </header>
@@ -71,43 +106,42 @@
     <section class="section">
         <div class="container-fluid">
            <div class="headinfo">
-            <span class="title">Discover Our Featured Properties</span>
-            <span class="disc">Browse our exclusive collection of homes, apartments, and Constructions spaces</span>
+            <span class="title">Découvrez nos propriétés vedettes</span>
+            <span class="disc">Parcourez notre collection exclusive de maisons, appartements et espaces de construction</span>
            </div>
 
            <div class="tab">
                <button class="tablinks active" onclick="openTab(event, 'Villas')">Villas</button>
             <button class="tablinks" onclick="openTab(event, 'Terrains')">Terrains</button>
             <button class="tablinks" onclick="openTab(event, 'Constructions')">Constructions</button>
-            <button class="tablinks" onclick="openTab(event, 'land')">Land</button>
         </div>
         
-         <!-- Listings for villas -->
+         <!-- Listings pour villas -->
          <div id="Villas" class="listing property active">
             <div class="carditem">
                 <a href="propertyreservation.html?id=101" class="property-link">
                     <div class="image-container">
-                        <img src="real project images//1 (1).jpg" alt="..." class="card-img">
+                        <img src="real project images/ChatGPT Image 10 mai 2025, 16_22_31.png" alt="..." class="card-img">
                         <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
-                        <span class="badge badge-top">FEATURED</span>
-                        <span class="badge badge-right">FOR SALE</span>
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
                     </div>
         
                     <div class="card-body">
                         <div class="top-info">
-                            <span class="card-title">Selway Villa</span>
+                            <span class="card-title">Villa Selway</span>
                         </div>
                         <div class="property-location">
-                            <i class="fa-solid fa-location-dot"></i> 50 Sunset Blvd, Miami, FL
+                            <i class="fa-solid fa-location-dot"></i> Côte d'ivoire
                         </div>
                         <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
-                            <span><i class="fa-solid fa-expand"></i> 250 sqft</span>
+                            <span><i class="fa-solid fa-bed"></i> 4 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 3 Salles de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 250 m²</span>
                         </div>
                     </div>
                     <div class="property-footer">
-                        <div class="property-price">$5600</div>
+                        <div class="property-price">Cliquez-ici</div>
                     </div>
                 </a>
             </div>
@@ -115,27 +149,27 @@
             <div class="carditem">
                 <a href="propertyreservation.html?id=102" class="property-link">
                     <div class="image-container">
-                        <img src="real project images/1 (2).jpg" alt="..." class="card-img">
+                        <img src="real project images/ChatGPT Image 10 mai 2025, 16_12_27.png" alt="..." class="card-img">
                         <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
-                        <span class="badge badge-top">FEATURED</span>
-                        <span class="badge badge-right">FOR SALE</span>
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
                     </div>
         
                     <div class="card-body">
                         <div class="top-info">
-                            <span class="card-title">Ocean Breeze Villa</span>
+                            <span class="card-title">Villa Ocean Breeze</span>
                         </div>
                         <div class="property-location">
                             <i class="fa-solid fa-location-dot"></i> 10 Beach Dr, Malibu, CA
                         </div>
                         <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 4 Baths</span>
-                            <span><i class="fa-solid fa-expand"></i> 320 sqft</span>
+                            <span><i class="fa-solid fa-bed"></i> 5 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 4 Salles de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 320 m²</span>
                         </div>
                     </div>
                     <div class="property-footer">
-                        <div class="property-price">$8900</div>
+                        <div class="property-price">Cliquez-ici</div>
                     </div>
                 </a>
             </div>
@@ -145,25 +179,25 @@
                     <div class="image-container">
                         <img src="real project images/1 (3).jpg" alt="..." class="card-img">
                         <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
-                        <span class="badge badge-top">FEATURED</span>
-                        <span class="badge badge-right">FOR SALE</span>
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
                     </div>
         
                     <div class="card-body">
                         <div class="top-info">
-                            <span class="card-title">Palm Retreat</span>
+                            <span class="card-title">Retraite Palmier</span>
                         </div>
                         <div class="property-location">
                             <i class="fa-solid fa-location-dot"></i> 25 Palm St, Orlando, FL
                         </div>
                         <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
-                            <span><i class="fa-solid fa-expand"></i> 200 sqft</span>
+                            <span><i class="fa-solid fa-bed"></i> 3 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Salles de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 200 m²</span>
                         </div>
                     </div>
                     <div class="property-footer">
-                        <div class="property-price">$7200</div>
+                        <div class="property-price">Cliquez-ici</div>
                     </div>
                 </a>
             </div>
@@ -172,55 +206,55 @@
                     <div class="image-container">
                         <img src="real project images/1 (4).jpg" alt="..." class="card-img">
                         <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
-                        <span class="badge badge-top">FEATURED</span>
-                        <span class="badge badge-right">FOR SALE</span>
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
                     </div>
         
                     <div class="card-body">
                         <div class="top-info">
-                            <span class="card-title">Palm Retreat</span>
+                            <span class="card-title">Retraite Palmier</span>
                         </div>
                         <div class="property-location">
                             <i class="fa-solid fa-location-dot"></i> 25 Palm St, Orlando, FL
                         </div>
                         <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
-                            <span><i class="fa-solid fa-expand"></i> 200 sqft</span>
+                            <span><i class="fa-solid fa-bed"></i> 3 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Salles de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 200 m²</span>
                         </div>
                     </div>
                     <div class="property-footer">
-                        <div class="property-price">$7200</div>
+                        <div class="property-price">Cliquez-ici</div>
                     </div>
                 </a>
             </div>
         </div>
-        <!-- Listings for Terrains -->
+        <!-- Listings pour Terrains -->
         <div id="Terrains" class="listing property ">
             <div class="carditem">
                 <a href="propertyreservation.html?id=1" class="property-link">
                     <div class="image-container">
-                        <img src="images/productimages/1st.jpeg" alt="..." class="card-img">
+                        <img src="images/WhatsApp Image 2025-05-04 à 13.52.35_2e14b3fc.jpg" alt="..." class="card-img">
                         <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
-                        <span class="badge badge-top">FEATURED</span>
-                        <span class="badge badge-right">FOR SALE</span>
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
                     </div>
         
                     <div class="card-body">
                         <div class="top-info">
-                            <span class="card-title">Selway Apartments</span>
+                            <span class="card-title">Appartements Selway</span>
                         </div>
                         <div class="property-location">
-                            <i class="fa-solid fa-location-dot"></i> 35-60 11th St, Queens, NY
+                            <i class="fa-solid fa-location-dot"></i> Côte d'Ivoire
                         </div>
                         <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 1 Bath</span>
-                            <span><i class="fa-solid fa-expand"></i> 160 sqft</span>
+                            <span><i class="fa-solid fa-bed"></i> 3 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Salle de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 160 m²</span>
                         </div>
                     </div>
                     <div class="property-footer">
-                        <div class="property-price">$3900</div>
+                        <div class="property-price">Cliquez-ici</div>
                     </div>
                 </a>
             </div>
@@ -228,27 +262,27 @@
             <div class="carditem">
                 <a href="propertyreservation.html?id=2" class="property-link">
                     <div class="image-container">
-                        <img src="images/productimages/1st.jpeg" alt="..." class="card-img">
+                        <img src="images/WhatsApp Image 2025-05-04 à 13.52.10_3e93bd25.jpg" alt="..." class="card-img">
                         <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
-                        <span class="badge badge-top">FEATURED</span>
-                        <span class="badge badge-right">FOR SALE</span>
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
                     </div>
         
                     <div class="card-body">
                         <div class="top-info">
-                            <span class="card-title">Downtown Condo</span>
+                            <span class="card-title">Condos Downtown</span>
                         </div>
                         <div class="property-location">
-                            <i class="fa-solid fa-location-dot"></i> 45-20 Broadway, Manhattan, NY
+                            <i class="fa-solid fa-location-dot"></i> Côte d'Ivoire
                         </div>
                         <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 2 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
-                            <span><i class="fa-solid fa-expand"></i> 120 sqft</span>
+                            <span><i class="fa-solid fa-bed"></i> 2 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Salles de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 120 m²</span>
                         </div>
                     </div>
                     <div class="property-footer">
-                        <div class="property-price">$4200</div>
+                        <div class="property-price">Cliquez-ici</div>
                     </div>
                 </a>
             </div>
@@ -256,28 +290,27 @@
             <div class="carditem">
                 <a href="propertyreservation.html?id=3" class="property-link">
                     <div class="image-container">
-                        <img src="images/productimages/1st.jpeg" alt="..." class="card-img">
+                        <img src="images/WhatsApp Image 2025-05-04 à 13.52.35_2e14b3fc.jpg" alt="..." class="card-img">
                         <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
-                        <span class="badge badge-top">FEATURED</span>
-                        <span class="badge badge-right">FOR SALE</span>
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
                     </div>
         
                     <div class="card-body">
                         <div class="top-info">
-                            <span class="card-title">Lakeside Villa</span>
+                            <span class="card-title">Duplex</span>
                         </div>
                         <div class="property-location">
-                            <i class="fa-solid fa-location-dot"></i> 100 Bay St, Brooklyn, NY
+                            <i class="fa-solid fa-location-dot"></i> Côte d'Ivoire
                         </div>
                         <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
-                            <span><i class="fa-solid fa-expand"></i> 220 sqft</span>
+                            <span><i class="fa-solid fa-bed"></i> 4 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 3 Salles de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 220 m²</span>
                         </div>
                     </div>
                     <div class="property-footer">
-                        <div class="property-price">$5000</div>
-                        
+                        <div class="property-price">Cliquez-ici</div>
                     </div>
                 </a>
             </div>
@@ -285,7 +318,92 @@
         
       
         
-       
+        <div id="Constructions" class="listing property active">
+            <div class="carditem">
+                <a href="propertyreservation.html?id=101" class="property-link">
+                    <div class="image-container">
+                        <img src="real project images/ChatGPT Image 10 mai 2025, 16_22_31.png" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Villa</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> Côte D'Ivoire
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 4 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 3 Salles de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 250 m²</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">Cliquez-ici</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="carditem">
+                <a href="propertyreservation.html?id=102" class="property-link">
+                    <div class="image-container">
+                        <img src="images/WhatsApp Image 2025-05-04 à 13.52.35_2e14b3fc.jpg" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Villa</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> Côte d'Ivoire
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 4 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 3 Salles de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 250 m²</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">Cliquez-ici</div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="carditem">
+                <a href="propertyreservation.html?id=103" class="property-link">
+                    <div class="image-container">
+                        <img src="images/WhatsApp Image 2025-05-04 à 13.52.10_3e93bd25.jpg" alt="..." class="card-img">
+                        <img src="images/productimages/image-avatar.png" class="profile-icon" alt="Agent">
+                        <span class="badge badge-top">EN VEDETTE</span>
+                        <span class="badge badge-right">À VENDRE</span>
+                    </div>
+        
+                    <div class="card-body">
+                        <div class="top-info">
+                            <span class="card-title">Villa</span>
+                        </div>
+                        <div class="property-location">
+                            <i class="fa-solid fa-location-dot"></i> Côte D'Ivoire
+                        </div>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 4 Chambres</span>
+                            <span><i class="fa-solid fa-bath"></i> 3 Salles de bain</span>
+                            <span><i class="fa-solid fa-expand"></i> 250 m²</span>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-price">Cliquez-ici</div>
+                    </div>
+                </a>
+            </div>
+        </div>
         
         
      
@@ -303,7 +421,7 @@
     
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <form action="https://formspree.io/f/mblgprok" method="post" class="elegant-form">
+                    <form action="https://formsubmit.co/baccimomail825@gmail.com" method="POST">
                         <div class="row">
                             <div class="col-md-6 mb-4">
                                 <div class="form-group">
@@ -355,8 +473,10 @@
                         </div>
     
                         <div class="mb-4 form-check">
+                            <form action="https://formsubmit.co/baccimomail825@gmail.com" method="POST">
                             <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
                             <label class="form-check-label" for="newsletter">Je souhaite recevoir les newsletters et offres promotionnelles</label>
+                        </form>
                         </div>
     
                         <div class="text-center">
@@ -377,55 +497,50 @@
           <div>
             <img src="images/logo-bg-white.jpg" alt="Logo" style="max-width: 100px; margin-bottom: 20px;">
             <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
-              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/share/16CtpR62JT/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>          
+                <a href="https://www.tiktok.com/@entreprisebacimmo1?_t=ZM-8v0j59309Kv&_r=1" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
             </div>
           </div>
       
           <!-- Services -->
           <div style="text-align: left;">
-            <h3 style="color: #3399ff;">Our Services</h3>
-            <p><a href="#">Property Listings</a></p>
-            <p><a href="#">Real Estate Consultation</a></p>
-            <p><a href="#">Property Management</a></p>
-            <p><a href="#">Investment Advisory</a></p>
-          </div>
-      
-          <!-- Quick Links -->
-          <div style="text-align: left;">
-            <h3 style="color: #3399ff;">Quick Links</h3>
-            <p><a href="#">About Us</a></p>
-            <p><a href="#">Browse Properties</a></p>
-            <p><a href="#">Our Policies</a></p>
-            <p><a href="#">Contact Support</a></p>
-          </div>
-      
-          <!-- Contact -->
-          <div style="text-align: left;">
-            <h3 style="color: #3399ff;">Contact Us</h3>
-            <p style="font-size: 20px;"><i class="fas fa-map-marker-alt"></i> Location</p>
-            <p style="font-size: 20px;"><i class="fas fa-phone-alt"></i> +123 456 7890</p>
-            <p style="font-size: 20px;"><i class="fas fa-envelope"></i> info@example.com</p>
-          </div>
+            <h3 style="color: #3399ff;">Nos Services</h3>
+            <p><a href="#">Annonces Immobilières</a></p>
+            <p><a href="#">Consultation Immobilière</a></p>
+            <p><a href="#">Gestion de Propriétés</a></p>
+            <p><a href="#">Conseil en Investissement</a></p>
         </div>
-      
+        
+        <!-- Liens Rapides -->
+        <div style="text-align: left;">
+            <h3 style="color: #3399ff;">Liens Rapides</h3>
+            <p><a href="#">À Propos</a></p>
+            <p><a href="#">Parcourir les Biens</a></p>
+            <p><a href="#">Nos Politiques</a></p>
+            <p><a href="#">Support Client</a></p>
+        </div>
+        
+        <!-- Contact -->
+        <div style="text-align: left;">
+            <h3 style="color: #3399ff;">Contactez-Nous</h3>
+            <p style="font-size: 20px;"><i class="fas fa-map-marker-alt"></i> Localisation</p>
+            <p style="font-size: 20px;"><i class="fas fa-phone-alt"></i> +225 272 220 7202</p>
+            <p style="font-size: 20px;"><i class="fas fa-envelope"></i> bacimmo22@gmail.com</p>
+        </div>
+        </div>
+        
         <!-- Newsletter -->
         <div style="max-width: 600px; margin: 40px auto 0; text-align: center;">
-          <form style="display: flex;">
-            <input type="email" placeholder="Subscribe to our newsletter" required style="flex:1; padding: 10px; border: 1px solid white; background: transparent; color: white; border-radius: 5px 0 0 5px;">
-            <button type="submit" class="subscribe" style="background: #3399ff; border: none; padding: 10px 20px; border-radius: 0 5px 5px 0; color: white; cursor: pointer; transition: 0.3s;">Send</button>
-          </form>
+        <form style="display: flex;">
+            <input type="email" placeholder="Abonnez-vous à notre newsletter" required style="flex:1; padding: 10px; border: 1px solid white; background: transparent; color: white; border-radius: 5px 0 0 5px;">
+            <button type="submit" class="subscribe" style="background: #3399ff; border: none; padding: 10px 20px; border-radius: 0 5px 5px 0; color: white; cursor: pointer; transition: 0.3s;">Envoyer</button>
+        </form>
         </div>
-      
+        
         <hr style="border-color: rgba(255,255,255,0.2); margin: 40px 0;">
-      
-        <p style="text-align: center; font-size: 14px;">© Basia Officiel 2025 – All Rights Reserved.</p>
-    
-       
-      </footer>
+        
+        <p style="text-align: center; font-size: 14px;">© Basia Officiel 2025 - Tous droits Réservés.</p>
+        </footer>
     
             
 
@@ -433,35 +548,36 @@
     <script src="script.js"></script>
     <script src="pscript.js"></script>
  
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const reserveButtons = document.querySelectorAll(".reserve-btn");
-        
-            reserveButtons.forEach(function (btn) {
-                btn.addEventListener("click", function () {
-                    const card = btn.closest(".property-card");
-                    if (!card) return;
-        
-                    const title = card.querySelector(".property-title")?.innerText || "No Title";
-                    const location = card.querySelector(".property-location")?.innerText || "No Location";
-                    const price = card.querySelector(".property-price")?.innerText || "0";
-                    const image = card.querySelector("img")?.getAttribute("src") || "";
-        
-                    const property = {
-                        title,
-                        location,
-                        price,
-                        image,
-                        id: title.toLowerCase().replace(/\s+/g, "-") // optional ID
-                    };
-        
-                    localStorage.setItem("selectedProperty", JSON.stringify(property));
-                    window.location.href = "properties-reservation.html";
-                });
+   <!-- ✅ properties.html : script de redirection mis à jour pour "Contactez-Nous" -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".carditem a.property-link");
+    
+        cards.forEach(card => {
+            card.addEventListener("click", function () {
+                const cardElement = card.closest(".carditem");
+    
+                const title = cardElement.querySelector(".card-title")?.innerText || "Sans titre";
+                const location = cardElement.querySelector(".property-location")?.innerText || "Non spécifié";
+                const image = cardElement.querySelector(".card-img")?.getAttribute("src") || "";
+                const price = cardElement.querySelector(".property-price")?.innerText || "Prix non indiqué";
+    
+                const idMatch = card.getAttribute("href").match(/id=(\d+)/);
+                const id = idMatch ? idMatch[1] : null;
+    
+                const property = {
+                    id,
+                    title,
+                    location,
+                    image,
+                    price
+                };
+    
+                localStorage.setItem("selectedProperty", JSON.stringify(property));
             });
         });
-        </script>
+    });
+    </script>
         
-    
 </body>
 </html>
